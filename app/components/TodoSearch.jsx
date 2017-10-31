@@ -7,16 +7,17 @@ var TodoSearch = React.createClass({
 		var searchText = this.refs.searchText.value;
 
 		this.props.onSearch(showCompleted, searchText);
+		alert('bloop');
 	},
 	render: function () {
 		return (
 			<div>
 				<div>
-					<input type="search" ref="searchText" placeholder="search todos" onChnage={this.handleSearch}/>
+					<input type="search" ref="searchText" placeholder="search todos" onChange={this.handleSearch}/>
 				</div>
 				<div>
 					<label>
-						<input type="checkbox" ref="showCompleted" onChnage={this.handleSearch}/>
+						<input type="checkbox" ref="showCompleted" onChange={this.handleSearch}/>
 						Show Completed Todos
 					</label>
 				</div>
