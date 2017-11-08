@@ -7,7 +7,6 @@ var TodoSearch = React.createClass({
 		var searchText = this.refs.searchText.value;
 
 		this.props.onSearch(showCompleted, searchText);
-		alert('bloop');
 	},
 	render: function () {
 		return (
